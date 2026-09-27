@@ -108,21 +108,7 @@ customers, orders, order_items e sellers).
 se tenho o produto em um vendedor no mesmo estado é muito mais barato direcionar o cliente até ele, ou no caso de compras online enviar o produto a partir 
 do vendedor mais própximo, mesmo estado.
 
-*/
-select * from olist_customers_dataset;
-select *from olist_orders_dataset;
-select * from olist_order_items_dataset;
-select * from olist_sellers_dataset;
-
-select
-	olist_orders_dataset.customer.id,
-	olist_customers_dataset.customer_state,
-	olist_order_items_dataset.order_id,
-	olist_sellers_dataset.seller_id,
-	olist_sellers_dataset.seller_state
-from 
-	olist_order_items_dataset
-inner join 
+*/ 
 
 
 select 
